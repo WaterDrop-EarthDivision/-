@@ -1,0 +1,295 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "楷体";
+}
+.iot_all{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    padding: auto;
+    margin:0 auto;
+    /* overflow: hidden; */
+}
+
+.iot_header{
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    margin: 0 auto;
+}
+
+#iot_img{
+    width: 100%;
+    height: 114px;
+    margin: 0 auto;
+}
+#iot_img div{
+    margin: 0 auto;
+    background-image: url(./image/top5.jpg);
+    background-repeat: no-repeat;
+    background-size:  100%;
+    width: 1300px;
+    height: 114px;
+}
+#iot_nav{
+    background-color: rgb(1, 112, 193);
+    height:48px;
+    margin: 0 auto;
+    width: 100%
+}
+#iot_nav ul{
+    width:1300px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+#iot_nav ul li a{
+    text-align: center;
+    margin:  auto;
+    padding: auto;
+    color: white;
+    line-height: 48px;
+    text-decoration: none;
+}
+.iot_body{
+    background-color:white;
+    margin: 0 auto;
+    z-index: 1;
+    position:relative;
+    top: 162px;
+}
+#iot_mianBody{
+    width: 1320px;
+    height: 580px;
+    /* background: conic-gradient(black, 
+    skyblue, 
+    pink, 
+    white); */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#iot_mainBody1{
+    width: 220px;
+    height: 550px;
+    background-color: orange;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+#iot_calendar{
+    width: 100%;
+    height: 280px;
+    background-color: white;
+    border: 0.5px solid darkgrey;
+    border-radius: 5px;
+}
+#iot_calendarTop div{
+    width: 98%;
+    height: 35px;
+    background-color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#iot_calendarTop text{
+    margin-left: 10px;
+}
+#iot_calendarTop a{
+    margin-left: 45px;
+}
+#iot_calendarTop i,a{
+    color: rgb(29,154,219);
+    text-decoration: none;
+}
+#iot_calendarTop span{
+    margin-left: 10px;
+}
+#iot_calendarBody button{
+    border: none;
+    font-size: large;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.iot_lastMonth,.iot_nextMonth{
+    color: darkgray;
+}
+#iot_calendarBody1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(29,154,219);
+    color: white;
+    padding: 5px 0px;
+}
+#iot_calendarBody2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+}
+#iot_day{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 0;
+}
+.iot_everyDay{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.iot_everyDay:hover{
+    color: white !important;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#iot_entrance{
+    height: 35px;
+    width: 100%;
+    background-color: #1D9ADB;
+    line-height: 35px;
+    text-indent: 1em;
+    color: white;
+    font-weight: bold;
+}
+.iot_kuaiJieEvent{
+    height: 41px;
+    width: 100%;
+    color: #3a3a3a;
+    line-height: 41px;
+    background-color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+#iot_mainBody2{
+    width: 446px;
+    height: 550px;
+    background-color: antiquewhite;
+}
+#iot_mainBody3{
+    width: 368px;
+    height: 550px;
+    background-color: blue;
+}
+#iot_mainBody4{
+    width: 220px;
+    height: 550px;
+    background-color: antiquewhite;
+}
+#iot_link{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(241,241,241);
+}
+
+#iot_linkMain{
+    position: relative;
+    height: 150px;
+    width: 1304px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#iot_linkMain ul{
+    list-style-position: inside;
+}
+#iot_linkMain ul li a{
+    text-decoration: none;
+    color: black;
+}
+#iot_linkMain h3{
+    text-align: center;
+}
+#iot_linkMain1{
+    width: 183px;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+#iot_linkMain2{
+    width: 480px;
+    height: 100%;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+#iot_linkMain2link{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+}
+#iot_linkMain3{
+    width: 410px;
+    height: 100%;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#iot_linkMain3 div span p:nth-child(2),#iot_linkMain3 div span p:nth-child(3){
+    text-indent: 3em;
+}
+#iot_linkMain4{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+#iot_linkMain4 img{
+    width: 100%;
+        /* 保持纵横比缩放图片，只保证图片的短边能完全显示出来 */
+        object-fit: cover;
+        margin: auto auto;
+}
+#iot_end{
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: rgb(59,63,74);
+}
+#iot_endMain{
+    position: relative;
+    height: 46px;
+    width: 1304px;
+    margin: 0 auto;
+    color: white;
+    line-height: 46px;
+}
