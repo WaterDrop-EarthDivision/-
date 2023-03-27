@@ -96,3 +96,21 @@ function nextMonth(){
      }
      showDate();
 }
+
+function GongGao(){
+    var JiaoXueUl = document.getElementById("iot_JiaoXueUl");
+    JiaoXueUl.style.display='none';
+    var GongGaoUl = document.getElementById('iot_GongGaoUl');
+    GongGaoUl.style.display='flex';
+    var arrowHead =  document.getElementById("iot_arrowhead");
+    arrowHead.style.left = 93+'px';
+}
+
+function JiaoXue(){
+    var JiaoXueUl = document.getElementById("iot_JiaoXueUl");
+    JiaoXueUl.style.display='flex';
+    var GongGaoUl = document.getElementById('iot_GongGaoUl');
+    GongGaoUl.style.display='none';
+    var arrowHead =  document.getElementById("iot_arrowhead");
+    arrowHead.style.left = 0+'px';
+}

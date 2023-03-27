@@ -19,6 +19,8 @@
     z-index: 10;
     position: fixed;
     margin: 0 auto;
+    top: 0;
+    left: 0;
 }
 
 #iot_img{
@@ -111,7 +113,7 @@
 #iot_calendarTop a{
     margin-left: 45px;
 }
-#iot_calendarTop i,a{
+#iot_calendarTop i,#iot_calendarTop a{
     color: rgb(29,154,219);
     text-decoration: none;
 }
@@ -165,6 +167,12 @@
     border-radius: 50%;
     cursor: pointer;
 }
+#iot_kuaiJie{
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
 #iot_entrance{
     height: 35px;
     width: 100%;
@@ -173,6 +181,7 @@
     text-indent: 1em;
     color: white;
     font-weight: bold;
+    border: 0.5px solid darkgrey;
 }
 .iot_kuaiJieEvent{
     height: 41px;
@@ -182,11 +191,81 @@
     background-color: white;
     text-align: left;
     padding-left: 20px;
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.iot_kuaiJieEvent:hover{
+    background-color: rgb(85,85,85);
+    color: white;
 }
 #iot_mainBody2{
     width: 446px;
     height: 550px;
     background-color: antiquewhite;
+}
+#iot_mainBodyNav{
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    border-bottom: 2px solid #0170c1;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+#iot_mainBodyNav span{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#iot_arrowhead{
+    position: absolute;
+    left: 0;
+}
+#iot_mainBodyNav a{
+    right: 2px;
+    height: 35px;
+    width: 70px;
+    position:absolute;
+    background-image: url(./image/more.png);
+}
+#iot_jiaoxue{
+    z-index: 10;
+}
+#iot_mainBodyNav a:hover{
+    background-image: url(./image/more1.png);
+}
+#iot_JiaoXueUl{
+    display: flex;
+}
+#iot_GongGaoUl{
+    display: none;
+}
+#iot_JiaoXueUl,#iot_GongGaoUl{
+    list-style-type: none;
+    flex-direction: column;
+    letter-spacing: 0.5px;
+}
+#iot_JiaoXueUl li,#iot_GongGaoUl li{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+.iot_JiaoXue a,.iot_GongGao a{
+    text-decoration: none;
+    height: 39px;
+    width: 100%;
+    line-height: 39px;
+    font-size: 14px;
+    text-indent: 1em;
+    color: black;
+}
+.iot_JiaoXue span,.iot_GongGao span{
+    position: absolute;
+    right: 6px;
+    line-height: 35px;
+    color: #bbb;
 }
 #iot_mainBody3{
     width: 368px;
