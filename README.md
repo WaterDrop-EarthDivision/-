@@ -9,6 +9,7 @@
 
 ## updata 2023.3.29
 ---
+将mainbody2中的动态效果进行了变更 通过js动态添加style属性（style中含有animation）来使元素运动的更加好看
 用css搓了一个轮播图出来 准备复习一下js用js搓一个
 看一下能不能通过js添加定义了animation的style来实现更平滑的轮播图把
 ---
