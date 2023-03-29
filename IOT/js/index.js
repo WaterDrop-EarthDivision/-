@@ -102,8 +102,8 @@ function GongGao(){
     JiaoXueUl.style.display='none';
     var GongGaoUl = document.getElementById('iot_GongGaoUl');
     GongGaoUl.style.display='flex';
-    var arrowHead =  document.getElementById("iot_arrowhead");
-    arrowHead.style.left = 93+'px';
+    var arrowHead =  document.getElementById("iot_arrowhead") || document.getElementById("iot_arrowheadRight");
+    arrowHead.id = 'iot_arrowheadLeft';
 }
 
 function JiaoXue(){
@@ -111,6 +111,21 @@ function JiaoXue(){
     JiaoXueUl.style.display='flex';
     var GongGaoUl = document.getElementById('iot_GongGaoUl');
     GongGaoUl.style.display='none';
-    var arrowHead =  document.getElementById("iot_arrowhead");
-    arrowHead.style.left = 0+'px';
+    var arrowHead =  document.getElementById("iot_arrowhead") || document.getElementById("iot_arrowheadLeft");
+    arrowHead.id = 'iot_arrowheadRight';
+}
+
+function Lunbo(){
+    var children = document.querySelectorAll(".iot_CarouselChi");
+    var father = document.getElementById("iot_Carousel");
+    var index = 0;
+    var time =0 ;
+    function position(){
+        children.style.left = (index* -100) + '%';
+    }
+    function add() {
+        if (index >= children.lenth-1) {
+            index = 0
+        }  
+     }
 }
