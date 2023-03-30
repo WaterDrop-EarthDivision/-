@@ -111,21 +111,78 @@ function JiaoXue(){
     JiaoXueUl.style.display='flex';
     var GongGaoUl = document.getElementById('iot_GongGaoUl');
     GongGaoUl.style.display='none';
-    var arrowHead =  document.getElementById("iot_arrowhead") || document.getElementById("iot_arrowheadLeft");
+    var arrowHead =   document.getElementById("iot_arrowheadLeft");
     arrowHead.id = 'iot_arrowheadRight';
 }
 
+
+
 function Lunbo(){
-    var children = document.querySelectorAll(".iot_CarouselChi");
-    var father = document.getElementById("iot_Carousel");
+    var father = document.querySelector("#iot_Carousel");
+    var children = document.querySelectorAll('.iot_CarouselChi');
     var index = 0;
     var time =0 ;
+    var left = document.getElementById('iot_Left')
+    var right = document.getElementById('iot_Right')
+    var button = document.querySelectorAll('.iot_Underbut')
+    console.log(button);
     function position(){
-        children.style.left = (index* -100) + '%';
-    }
-    function add() {
-        if (index >= children.lenth-1) {
+        father.style.left = (index* -100) + '%';
+    }       //实现位置变换
+    function add() {        //实现增加图片操作
+        if (index >= children.length-1) {
             index = 0
-        }  
-     }
+        }  else{
+            index ++
+        }
+    }          
+    function desc(){       //实现减少图片操作
+        if(index < 1){
+            index = children.length -1 
+        }else{
+            index --
+        }
+    }
+    function timer(){
+        time = setInterval(()=>{
+                index++
+                desc()
+                add()
+                position()
+                // console.log(index);
+        },3000)
+        // console.log(11);
+    }
+    timer()
+    left.addEventListener('click',()=>{
+        desc()
+        position()
+        clearInterval(time)
+        timer()
+    })
+    right.addEventListener('click',()=>{
+        add()
+        position()
+        clearInterval(time)
+        timer()
+    })
+
+    // children.onmouseover=function(){
+    //     clearInterval(time);
+    // }
+    // children.onmouseout = function() {
+    //     timer();
+    //     }
+
+    for (let i = 0; i < children.length; i++) {
+        button[i].addEventListener("click", () => {
+            index = i
+            position()
+            clearInterval(time)
+            timer()
+            console.log(11);
+         })
+        
+      }
+
 }

@@ -85,7 +85,7 @@
 #iot_mainBody1{
     width: 220px;
     height: 550px;
-    background-color: orange;
+    /* background-color: orange; */
     display: flex;
     justify-content:space-between;
     flex-direction: column;
@@ -267,7 +267,7 @@
 #iot_GongGaoUl{
     display: none;
 }
-#iot_JiaoXueUl,#iot_GongGaoUl{
+#iot_JiaoXueUl,#iot_GongGaoUl,#iot_news{
     list-style-type: none;
     flex-direction: column;
     letter-spacing: 0.5px;
@@ -277,13 +277,14 @@
     flex-direction: column;
     letter-spacing: 0.5px;
 }
-#iot_JiaoXueUl li,#iot_GongGaoUl li{
+#iot_JiaoXueUl li,#iot_GongGaoUl li,#iot_news li{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     position: relative;
 }
-.iot_JiaoXue a,.iot_GongGao a{
+
+.iot_JiaoXue a,.iot_GongGao a,.iot_news a{
     text-decoration: none;
     height: 39px;
     width: 100%;
@@ -292,7 +293,7 @@
     text-indent: 1em;
     color: black;
 }
-.iot_JiaoXue span,.iot_GongGao span{
+.iot_JiaoXue span,.iot_GongGao span,.iot_news span{
     position: absolute;
     right: 6px;
     line-height: 35px;
@@ -301,7 +302,13 @@
 #iot_mainBody3{
     width: 368px;
     height: 550px;
-    background-color: orange;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid darkgrey;
+    border-radius: 5px;
 }
 #iot_xw{
     margin-left: 5px;
@@ -316,13 +323,14 @@
     overflow: hidden;
 }
 #iot_Carousel{
-    width: (1020+340)px;
+    width: (1020)px;
     height: 173px;
     position: absolute;
     display: flex;
-    animation: Lunbo 9s ease infinite backwards;
+    /* animation: Lunbo 9s ease infinite backwards; */
+    transition:  all .5s ease ;
 }
-@keyframes Lunbo{
+/* @keyframes Lunbo{
     0%{
         left: 0;
     }
@@ -341,7 +349,7 @@
     100%{
         left: -1020px;
     }
-}
+} */
 #iot_Carousel :nth-child(1){
     background-color: #1D9ADB;
     width: 340px;
@@ -357,10 +365,68 @@
     width: 340px;
     height: 173px;
 }
-#iot_Carousel :nth-child(4){
+/* #iot_Carousel :nth-child(4){
     background-color: #1D9ADB;
     width: 340px;
     height: 173px;
+} */
+#iot_CarouselButton{
+    width: 340px;
+    height: 173px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#iot_Left{
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgba(60, 60, 60, 0.3);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#iot_Right{
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgba(60, 60, 60, 0.3);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#iot_UnderButtonAll{
+    position: absolute;
+    width: 340px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: #1D9ADB; */
+    bottom: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.iot_Underbut{
+    width: 30px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.iot_news{
+    width: 364px;
+    height: 38px;
+    /* background-color: #1D9ADB; */
+    list-style: none;
+    overflow: hidden;
+}
+#iot_newsAll{
+    width: 100%;
 }
 #iot_mainBody4{
     width: 220px;
