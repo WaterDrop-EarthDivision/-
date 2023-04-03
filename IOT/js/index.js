@@ -166,13 +166,25 @@ function Lunbo(){
         clearInterval(time)
         timer()
     })
-
-    // children.onmouseover=function(){
-    //     clearInterval(time);
-    // }
-    // children.onmouseout = function() {
-    //     timer();
-    //     }
+    // children[0].style.background = 'url("./image/1.jpg");'; 
+    for (let i = 0; i < children.length; i++) {
+        
+        children[i].onmouseenter=function(){  //鼠标悬停时不动
+            clearInterval(time);
+            // console.log(11); 
+        }
+        children[i].onmouseout = function() {  //鼠标离开后继续动
+            timer();
+        // console.log(22);
+        }
+    }
+    children[0].onmouseenter=function(){
+        clearInterval(time);
+        console.log(11);
+    }
+    children[0].onmouseout = function() {
+        timer();
+        }
 
     for (let i = 0; i < children.length; i++) {
         button[i].addEventListener("click", () => {

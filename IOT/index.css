@@ -168,7 +168,7 @@
     cursor: pointer;
 }
 #iot_kuaiJie{
-    border: 0.5px solid darkgray;
+    /* border: 0.5px solid darkgray; */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -182,6 +182,7 @@
     color: white;
     font-weight: bold;
     border: 0.5px solid darkgrey;
+    border-radius: 2px;
 }
 .iot_kuaiJieEvent{
     height: 41px;
@@ -351,17 +352,26 @@
     }
 } */
 #iot_Carousel :nth-child(1){
-    background-color: #1D9ADB;
+    /* background-color: #1D9ADB; */
     width: 340px;
     height: 173px;
+    background: url(./image/1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 #iot_Carousel :nth-child(2){
-    background-color: aqua;
+    /* background-color: aqua; */
+    background: url(./image/2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 340px;
     height: 173px;
 }
 #iot_Carousel :nth-child(3){
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background:url(./image/3.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 340px;
     height: 173px;
 }
@@ -371,15 +381,16 @@
     height: 173px;
 } */
 #iot_CarouselButton{
-    width: 340px;
-    height: 173px;
+    /* height: 100%; */
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; */
 }
 #iot_Left{
+    position: absolute;
+    left: 0px;
     width: 30px;
     height: 60px;
     line-height: 60px;
@@ -388,8 +399,12 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+    /* line-height: 173px; */
+    top: 53px;
 }
 #iot_Right{
+    position: absolute;
+    right: 0px;
     width: 30px;
     height: 60px;
     line-height: 60px;
@@ -398,6 +413,8 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+    /* line-height: 173px; */
+    top: 53px;
 }
 #iot_UnderButtonAll{
     position: absolute;
@@ -431,7 +448,138 @@
 #iot_mainBody4{
     width: 220px;
     height: 550px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#iot_JiaoWuManagement{
+    width: 100%;
+    height: 218px;
+    /* background-color: #1D9ADB; */
+    border: 0.5px solid darkgrey;
+    border-radius: 5px;
+}
+#iot_ManagementHeader{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    text-indent: 0.5em;
+    padding: 1px;
+    font-weight: bold;
+    background-color: rgb(241, 241, 241);
+}
+#iot_ManagementHeader i{
+    color: red;
+}
+#iot_ManagementHeader a{
+    background-image:url(./image/pc2sm.png);
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+}
+#iot_ManagementHeader a:hover{
+    background: url(./image/pc2sm1.png);
+
+}
+#iot_ManagementBody form{
+    width: 200px;
+    height: 153px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iot_user{
+    width: 180px;
+    margin-top: 10px;
+    height: 32px;
+    border-radius: 02px;
+    border: 0.5px solid darkgray;
+    background-color: rgb(232,240,254);
+}
+.iot_user:nth-child(1){
+    background-image: url(./image/iconfont-yonghu.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 30px;
+    background-position-x: 2.7px;
+    background-position-y: center;
+}
+.iot_user:nth-child(2){
+    background-image: url(./image/iconfont-psw.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 30px;
+    background-position-x: 2.7px;
+    background-position-y: center;
+}
+#iot_ManagementBody form div{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+.iot_SorT{
+    margin-right: 2px;
+}   
+#iot_refind{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    margin-left: 20px;
+}
+#iot_submit{
+    width: 190px;
+    height: 32px;
+    background-color: #5cb85c;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#iot_BianJie{
+    width: 100%;
+    height: 309px;
+    /* background-color: #0170c1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0.5px solid darkgray;
+    border-radius: 2px;
+}
+#iot_bianJie{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.iot_bianJieBody{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    border-top: 0.5px solid darkgray;
+}
+.iot_bianJieBody :hover{
+    /* background-color: beige; */
+    transform:rotate(45deg) scale(2.05);
+    transition: 1s;
+    overflow: hidden;
+}
+.iot_bianJieBody i{
+    margin-left: 20px;
+    color: darkgrey;
+}
+.iot_bianJieBody a{
+    padding-left: 10px;
+    color: darkgray;
+    text-decoration: none;
 }
 #iot_link{
     position: relative;
@@ -439,7 +587,6 @@
     width: 100%;
     background-color: rgb(241,241,241);
 }
-
 #iot_linkMain{
     position: relative;
     height: 150px;
@@ -515,16 +662,19 @@
         margin: auto auto;
 }
 #iot_end{
-    position: relative;
+    /* position: relative; */
     height: 46px;
     width: 100%;
     background-color: rgb(59,63,74);
+    margin: 0 auto;
 }
 #iot_endMain{
-    position: relative;
+    /* position: relative; */
     height: 46px;
     width: 1304px;
     margin: 0 auto;
     color: white;
     line-height: 46px;
+    text-align: center;
+    display: block;
 }
