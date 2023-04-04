@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教务处欢迎您!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="./js/index.js"></script>
+</head>
+<body  onload="showDate();Lunbo();">
+    <div class="iot_all">
+        <header class="iot_header">
+            <div id="iot_img"><div></div></div>
+            <div id="iot_nav">
+                <ul>
+                    <li><a href="">
+                        <i class="fa fa-home" ></i>
+                        首页
+                    </a></li>
+                    <li><a href="">部门简介</a></li>
+                    <li><a href="">规章制度</a></li>
+                    <li><a href="">创新创业中心</a></li>
+                    <li><a href="">专业设置</a></li>
+                    <li><a href="">培养方案</a></li>
+                    <li><a href="">教学成果奖</a></li>
+                    <li><a href="">表格下载</a></li>
+                    <li><a href="">在线教学</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="iot_body" >
+            <div id="iot_mianBody">
+                <div id="iot_mainBody1">
+                    <div id="iot_calendar">
+                        <div id="iot_calendarTop">
+                            <div>
+                                <span><i class="fa fa-fire"></i><text>第5教学周</text></span>
+                                <a href="">[校历]</a>
+                            </div>
+                        </div>
+                        <div id="iot_calendarBody">
+                            <div id="iot_calendarBody1">
+                                <button onclick="lastMonth();"><</button>
+                                <span id="iot_Data">当前日期为</span>
+                                <button onclick="nextMonth();">></button>
+                            </div>
+                            <div id="iot_calendarBody2"> 
+                                <div class="iot_everyWeekDay">日</div>
+                                <div class="iot_everyWeekDay">一</div>
+                                <div class="iot_everyWeekDay">二</div>
+                                <div class="iot_everyWeekDay">三</div>
+                                <div class="iot_everyWeekDay">四</div>
+                                <div class="iot_everyWeekDay">五</div>
+                                <div class="iot_everyWeekDay">六</div>
+                            </div>
+                            <div>
+                                <div id="iot_day"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="iot_kuaiJie">
+                        <div id="iot_entrance">快捷入口</div>
+                        <div class="iot_kuaiJieEvent"><i class="fa fa-magic"></i>&nbsp;学生自助打印云平台</div>
+                        <div class="iot_kuaiJieEvent"><i class="fa fa-book"></i>&nbsp;智慧树学习平台</div>
+                        <div class="iot_kuaiJieEvent"><i class="fa fa-key"></i>&nbsp;超星学习平台</div>
+                        <div class="iot_kuaiJieEvent"><i class="fa fa-heartbeat"></i>&nbsp;虚拟仿真实验平台</div>
+                        <div class="iot_kuaiJieEvent"><i class="fa fa-pencil"></i>&nbsp;优秀学士论文查询</div>
+                    </div>
+                </div>
+                <div id="iot_mainBody2">
+                    <div id="iot_mainBodyNav">
+                        <span onclick="JiaoXue()" id="iot_jiaoxue">教学通知</span>
+                        <span onclick="GongGao()" id="iot_gonggao">长期公告</span>
+                        <img src="./image/tz5.png" id="iot_arrowhead">
+                        <a href=""></a>  
+                    </div>
+                    <ul id="iot_JiaoXueUl">
+                        <li class="iot_JiaoXue"> <a href=""> 关于开展2023届本科毕业论文（设计）后期工作的…</a>
+                            <span>[03-27]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于2023年春季大学生创新训练计划项目结题评审…</a>
+                            <span>[03-24]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于举办第十五届畜禽养殖技能大赛的通知</a>                       <span>[03-23]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于举办第九届机械创新设计大赛暨三维建模设计大赛…</a>
+                            <span>[03-22]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于举办四川农业大学第二届大学生植物科普微视频大…</a>
+                            <span>[03-20]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于举办四川农业大学第一届计算机设计大赛的通知</a>                           <span>[03-15]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于2022-2023-1学期课程缓补考考试安排…</a>
+                            <span>[03-15]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 2022-2023-2学期重修及毕业年级选课的通…</a>
+                            <span>[03-14]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于2023年春季科研兴趣培养计划项目结题通知</a>                           <span>[03-14]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于开展2022-2023-2学期证书免修工作的…</a>
+                            <span>[03-09]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于举办第八届全国大学生生命科学竞赛（创新创业类…</a>
+                            <span>[03-09]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于开展2023年大学生创新创业训练计划项目认定…</a>
+                            <span>[03-08]</span></li>
+                        <li class="iot_JiaoXue"> <a href=""> 关于开展2022-2023-2学期证书免修工作的…</a>
+                            <span>[03-07]</span></li>
+                    </ul>
+                    <ul id="iot_GongGaoUl">
+                        <li class="iot_GongGao"> <a href=""> 四川农业大学2016-2017学年本科教学质量报告</a>
+                            <span>[09-24]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 学籍及毕业证书政策告知</a>
+                            <span>[09-24]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于开展2023届本科毕业论文（设计）后期工作的…</a>                       <span>[03-27]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于2023年春季科研兴趣培养计划项目结题通知</a>
+                            <span>[03-14]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于开展2024届本科毕业论文（设计）开题答辩工…</a>
+                            <span>[02-27]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于补办学生证和火车票优惠卡的通知</a>                           <span>[02-27]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于公布2023年专业技能提升计划立项项目的通知</a>
+                            <span>[01-08]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于对超过学习年限本专科学生作退学处理的公告
+                            </a>
+                            <span>[01-04]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于公布2023年度本科生科研兴趣培养计划项目立…</a>                           <span>[12-09]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于开展2024届本科毕业论文（设计）工作的通知</a>
+                            <span>[11-09]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于组织2021年度四川省科技创新苗子工程培育项…</a>
+                            <span>[10-28]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于开展2022年秋季大学生创业训练（实践）计划…</a>
+                            <span>[10-26]</span></li>
+                        <li class="iot_GongGao"> <a href=""> 关于核定本科生导师库名单的通知</a>
+                            <span>[10-19]</span></li>
+                    </ul>
+                </div>
+                <div id="iot_mainBody3">
+                    <div id="iot_mainBodyNav">
+                        <img src="./image/xw4.png" alt="" id="iot_xw">
+                        <a href=""></a>  
+                    </div>
+                    <div id="iot_CarouselAll">
+                        <div id="iot_Carousel">
+                            <div class="iot_CarouselChi"></div>
+                            <div class="iot_CarouselChi"></div>
+                            <div class="iot_CarouselChi"></div>
+                            <!-- <div class="iot_CarouselChi"></div> -->
+                        </div>
+                        <div id="iot_CarouselButton">
+                            <div id="iot_Left"> 《 </div>
+                            <div id="iot_Right"> 》 </div>
+                        </div>
+                        <div id="iot_UnderButtonAll" > 
+                            <div class="iot_Underbut"></div>
+                            <div class="iot_Underbut"></div>
+                            <div class="iot_Underbut"></div>
+                        </div>
+                        
+                    </div>    
+                <div id="iot_newsAll">
+                    <ul id="iot_news">
+                        <li class="iot_news"><a href="">马克思主义学院召开新学期教学督导会议</a> <span>[03-23]</span></li>
+                        <li class="iot_news"><a href="">理学院召开新学期督导工作会议</a> <span>[03-22]</span> </li>
+                        <li class="iot_news"><a href="">环境学院召开新学期教学督导工作组会议</a><span>[03-22]</span></li>
+                        <li class="iot_news"><a href="">马克思主义学院召开一流课程申报工作启...</a><span>[03-16]</span></li>
+                        <li class="iot_news"><a href="">"督”“导”并行，助力专业建设和学科...</a><span>[03-15]</span></li>
+                        <li class="iot_news"><a href="">不服来战！第九届“互联网+”校内复活...</a><span>[03-13]</span></li>
+                        <li class="iot_news"><a href="">教务处工会开展踏青赏景活动</a><span>[03-10]</span></li>
+                        <li class="iot_news"><a href="">不误农时早谋划 春耕备耕农院行</a><span>[03-09]</span></li>
+                    </ul>
+                </div>
+                </div>
+                <div id="iot_mainBody4">
+                    <div id="iot_JiaoWuManagement">
+                        <div id="iot_ManagementHeader"> 
+                            <i class="fa fa-flag"></i>教务管理系统<a></a>
+                        </div>
+                        <div id="iot_ManagementBody">
+                            <form>
+                                <input type="text" placeholder="UserName" class="iot_user">
+                                <input type="text" placeholder="PassWord" class="iot_user">
+                                <div>
+                                    <input type="radio" name="shenfen" class="iot_SorT">学生
+                                    <input type="radio" name="shenfen" class="iot_SorT">教师
+                                    <a href="" id="iot_refind">密码找回</a>    
+                                </div>
+                                <button id="iot_submit">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="iot_BianJie">
+                        <div id="iot_bianJie">便捷查询</div>
+                        <div class="iot_bianJieBody"><i class="fa fa-book"></i><a href="">考试查询</a></div>
+                        <div class="iot_bianJieBody"><i class="fa fa-clock-o"></i><a href="">调停课查询</a></div>
+                        <div class="iot_bianJieBody"><i class="fa fa-eye"></i><a href="">今日有课教室</a></div>
+                        <div class="iot_bianJieBody"><i class="fa fa-apple"></i><a href="">当期课表查询</a></div>
+                        <div class="iot_bianJieBody"><i class="fa fa-edit"></i><a href="">各类竞赛通知</a></div>
+                        <div class="iot_bianJieBody"><i class="fa fa-dedent"></i><a href="">辅修招生简章</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="iot_link">
+                <div id="iot_linkMain">
+                    <div id="iot_linkMain1">
+                        <h3>校外链接</h3>
+                        <ul>
+                            <li><a href="">四川省教育厅</a></li>
+                            <li><a href="">教育部学信网</a></li>
+                            <li><a href="">学位认证中心</a></li>
+                        </ul>
+                    </div>
+                    <div id="iot_linkMain2">
+                        <div><h3>校内链接</h3></div>
+                        <div id="iot_linkMain2link">
+                            <ul>
+                                
+                                <li><a href="">学校主页</a></li>
+                                <li><a href="">研究生院</a></li>
+                                <li><a href="">国资基建处</a></li>
+                            </ul>                        <ul>
+                                <li><a href="">学生处</a></li>
+                                <li><a href="">人事处</a></li>
+                                <li><a href="">财务处</a></li>
+                            </ul>                        <ul>
+                                <li><a href="">图书馆</a></li>
+                                <li><a href="">档案馆</a></li>
+                                <li><a href="">信教中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="iot_linkMain3">
+                        <h3>联系我们</h3>
+                        <div><span>
+                            <!-- 地址:成都市温江区惠民路211号第一教学楼215室<br>
+                                雅安市雨城区新康路46号综合行政楼406室<br>
+                                成都市都江堰市建设路288号综合大楼 -->
+                                <p>地址：成都市温江区惠民路211号第一教学楼215室</p>
+                                <p>雅安市雨城区新康路46号综合行政楼406室</p>
+                                <p>成都市都江堰市建设路288号综合大楼</p>
+                        </span></div>
+                    </div>
+                    <div id="iot_linkMain4"><img src="./image/jw_login_xin.png"></div>
+                </div>
+            </div>
+            <div id="iot_end">
+                <div id="iot_endMain">
+                    <p>Copyright ©2019 四川农业大学教务处 All rights reserved. 教务处设计制作. 最佳访问浏览器：IE11    今日访问：7202 次   在线：14 人   总访问量：109605202 次</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
