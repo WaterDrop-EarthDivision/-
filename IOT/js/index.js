@@ -198,3 +198,22 @@ function Lunbo(){
       }
 
 }
+
+// function KuoHao(){
+//     var nav = document.querySelectorAll('.iot_navBody');
+//     var before = window.getComputedStyle(nav[0].childNodes[0],"::before");
+//     console.log(before.opacity,before.content);
+//     // console.log(nav[0].childNodes[0].style.backgroundColor='red');
+//     // nav.onmouseenter = function() {
+//     //     nav.style.opacity = 1;
+//     //     nav.backgroundColor = 'red';
+//     //     // console.log(22);
+//     //  }
+//     // console.log(nav[0].onmouseenter = before.opacity='1');
+//      for (let i = 0; i < nav.length; i++) {
+//         nav[i].addEventListener('onmouseenter',function(){
+//             var before = window.getComputedStyle(nav[i].childNodes[0],"::before");
+//             before.opacity='1';
+//         })
+//      }
+// }
