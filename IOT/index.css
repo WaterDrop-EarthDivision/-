@@ -4,6 +4,24 @@
     box-sizing: border-box;
     font-family: "楷体";
 }
+@media screen and (max-width:1300px) {
+    .iot_header{
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        position: relative !important;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+    }
+    .iot_body{
+        background-color:white;
+        margin: 0 auto;
+        z-index: 1;
+        position:relative;
+        top: 0px !important;   
+    }
+}
 .iot_all{
     width: 100%;
     height:100%;
@@ -60,6 +78,7 @@
 }
 #iot_nav ul li:nth-child(2){
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     background-color: rgb(1,112,193);
     height: 48px;
@@ -68,19 +87,21 @@
 }
 #iot_nav ul li:nth-child(6){
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     background-color: rgb(1,112,193);
     height: 48px;
     transition: 0.5s;
 }
-#iot_nav ul li:nth-child(2):hover{
+#iot_nav>ul>li:nth-child(2):hover{
     height: 192px;
 }
-#iot_nav ul li:nth-child(6):hover{
+#iot_nav>ul>li:nth-child(6):hover{
     height: 336px;
 }
 #iot_nav ul li:nth-child(2) div a:hover,#iot_nav ul li:nth-child(6) div a:hover{
     background-color: rgb(29,154,219);
+    overflow: visible;
 }
 #iot_nav ul li:nth-child(2) div,#iot_nav ul li:nth-child(6) div{
     display: flex;
@@ -147,7 +168,9 @@
     align-items: center;
     margin: 0 auto;
 }
-
+#iot_kuaiJie:hover,#iot_calendar:hover,#iot_mainBody2:hover,#iot_mainBody3:hover,#iot_JiaoWuManagement:hover,#iot_BianJie:hover{
+    box-shadow:5px 5px 5px 2px darkgrey;
+}
 #iot_mainBody1{
     width: 220px;
     height: 550px;
@@ -665,26 +688,49 @@
 #iot_linkMain ul{
     list-style-position: inside;
 }
+#iot_linkMain ul li{
+    width: 140px;
+    /* padding: 10px 10px; */
+    height: 25px;
+    /* padding: 0px 20px; */
+    line-height: 25px;
+}
 #iot_linkMain ul li a{
     text-decoration: none;
     color: black;
+    /* height: 100%; */
+    /* padding: 20px; */
+}
+#iot_linkMain h3:hover{
+    color: skyblue;
+}
+#iot_linkMain ul li a:hover{
+    color: skyblue;
+    /* transform: scale(150%);
+     */
+     font-size: 18px;
+
 }
 #iot_linkMain h3{
     text-align: center;
+
 }
 #iot_linkMain1{
     width: 183px;
     height: 100%;
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
+#iot_linkMain1 ul,#iot_linkMain2 div:nth-child(2){
+    border-right: 0.5px solid darkgray;
+}
 #iot_linkMain2{
     width: 480px;
     height: 100%;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -699,11 +745,12 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-end;
+    /* height: 100px; */
 }
 #iot_linkMain3{
     width: 410px;
     height: 100%;
-    background-color: azure;
+    /* background-color: azure; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
